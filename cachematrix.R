@@ -1,7 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+
+## This function creates an object which contains a matrix and returns a list of
+## functions, this list of functions will allow us to manipulate the 
+## matrix within, in the form of new.object$get() or new.object$set(a.matrix).
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -24,7 +27,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+
+## This function receives the object created with makeCacheMatrix, process the
+## data of the matrix within it with solve(), make use of the functions listed 
+## above in the first commentary and stores the results in a cache on the
+## local variable "m".... returns this "m" variable
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -45,18 +52,4 @@ cacheSolve <- function(x, ...) {
         
         m
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
